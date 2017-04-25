@@ -1,0 +1,23 @@
+<html>
+<body>
+	<select id="country" onChange="checkCapital(this.value)">
+		<option value="">Country...</option>
+		<option value="AU">Australia</option>
+		<option value="CA">Canada</option>
+		<option value="EG">Egypt</option>
+		<option value="DE">Germany</option>
+		<option value="IN">India</option>
+	</select>
+	<input type="text" id="capital" style="color:RED; font-style: italic">
+	<script>
+		function checkCapital(select){
+			var output = document.getElementById("capital");
+			if(select=="AU")output.value="canberra";
+			if(select=="CA")output.value="ottawa";
+			if(select=="EG")output.value="cairo";
+			if(select=="DE")output.value="berlin";
+			if(select=="IN")output.value="New Delhi";
+		}
+	</script>
+</body>
+</html>

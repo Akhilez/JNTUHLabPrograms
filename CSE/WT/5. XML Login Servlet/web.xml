@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1">
+    <display-name>xmlloginservlet</display-name>
+
+    <servlet>
+        <servlet-name>serv1</servlet-name>
+        <servlet-class>Validate</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>serv1</servlet-name>
+        <url-pattern>/serv1</url-pattern>
+    </servlet-mapping>
+
+    <init-param>
+        <param-name>user1</param-name>
+        <param-value>pass1</param-value>
+    </init-param>
+    <init-param>
+        <param-name>user2</param-name>
+        <param-value>pass2</param-value>
+    </init-param>
+</web-app>

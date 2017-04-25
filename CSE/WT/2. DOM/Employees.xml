@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog SYSTEM "Employee.dtd">
+<empdetails>
+    <employee id="01">
+        <name>shiva</name>
+        <desgn>Associate Professor</desgn>
+        <dept>IT</dept>
+        <salary>52000</salary>
+    </employee>
+
+    <employee id="02">
+        <name>ravi</name>
+        <desgn>Assistant Professor</desgn>
+        <dept>cse</dept>
+        <salary>48000</salary>
+    </employee>
+
+    <employee id="03">
+        <name>kiran</name>
+        <desgn>Professor</desgn>
+        <dept>ece</dept>
+        <salary>65000</salary>
+    </employee>
+
+    <employee id="04">
+        <name>shyam</name>
+        <desgn>rector</desgn>
+        <dept>cse</dept>
+        <salary>95000</salary>
+    </employee>
+    
+    <employee id="05">
+        <name>Shashi</name>
+        <desgn>professor</desgn>
+        <dept>cse</dept>
+        <salary>85000</salary>
+    </employee>
+</empdetails>

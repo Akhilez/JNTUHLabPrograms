@@ -1,0 +1,7 @@
+<!ELEMENT empdetails (employee*)>
+	<!ELEMENT employee (name,desgn,dept,salary)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT desgn (#PCDATA)>
+		<!ELEMENT dept (#PCDATA)>
+		<!ELEMENT salary (#PCDATA)>
+<!ATTLIST employee id CDATA #REQUIRED>

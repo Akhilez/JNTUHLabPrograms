@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1">
+    <display-name>task6d2</display-name>
+
+    <servlet>
+        <servlet-name>serv1</servlet-name>
+        <servlet-class>calcDBServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>serv1</servlet-name>
+        <url-pattern>/serv1</url-pattern>
+    </servlet-mapping>
+
+</web-app>
