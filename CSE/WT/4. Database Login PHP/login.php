@@ -26,19 +26,10 @@ if (isset($_POST['Submit'])) {
         echo "<p class='message'>" . $error . "</p>";
     } ?>
     <form name="info" id="info" method="post" action="">
-        Username:<input name="uname" type="text" value="<?php
-            if (isset($uname)) {
-                echo $uname;
-            } ?>" <?php if (isset($code) && $code == 1) {
-                echo
-                "class=error";
-            } ?>>
-        Password:<input name="pwd" type="password" value="<?php
-            if (isset($pass)) {
-                echo $pass;
-            } ?>" <?php if (isset($code) && $code == 1) {
-                echo "class=error";
-            } ?>>
+        Username:<input name="uname" type="text" value="<?php if (isset($uname)) echo $uname; ?>"
+            <?php if (isset($code) && $code == 1) echo "class=error"; ?>>
+        Password:<input name="pwd" type="password" value="<?php if (isset($pass)) echo $pass; ?>"
+            <?php if (isset($code) && $code == 1) echo "class=error"; ?>>
         <input type="submit" name="Submit" value="Submit"/>
     </form>
 </body>

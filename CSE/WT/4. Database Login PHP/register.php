@@ -48,38 +48,18 @@ Registration
     echo "<p class='message'>" . $error . "</p>";
 } ?>
 <form name="info" id="info" method="post" action="">
-    FirstName:<input name="fname" type="text" value="<?php if (isset($fname)) {
-            echo $fname;
-        } ?>" <?php if (isset($code) && $code == 1) {
-            echo "class=error";
-        } ?>>
-    LastName:<input name="lname" type="text" value="<?php if (isset($lname)) {
-            echo $lname;
-        } ?>" <?php if (isset($code) && $code == 1) {
-            echo "class=error";
-        } ?>>
-    UserName:<input name="uname" type="text" value="<?php if (isset($uname)) {
-            echo $uname;
-        } ?>" <?php if (isset($code) && $code == 1) {
-            echo "class=error";
-        } ?>>
-    Password:<input name="pwd" type="password" value="<?php if (isset($p)) {
-            echo $p;
-        } ?>" <?php if (isset($code) && $code == 1) {
-            echo "class=error";
-        } ?>>
-    Email:<input name="email" type="text" id="email" value="<?php if (isset($email)) {
-            echo
-            $email;
-        } ?>" <?php if (isset($code) && $code == 3) {
-            echo "class=error";
-        } ?>>
-    MobileNumber:<input name="mobile" type="text" id="number" value="<?php if (isset($mno)) {
-            echo
-            $mno;
-        } ?>" <?php if (isset($code) && $code == 2) {
-            echo "class=error";
-        } ?>>
+    FirstName:<input name="fname" type="text" value="<?php if (isset($fname)) echo $fname; ?>"
+        <?php if (isset($code) && $code == 1) echo "class=error"; ?>>
+    LastName:<input name="lname" type="text" value="<?php if (isset($lname)) echo $lname; ?>"
+        <?php if (isset($code) && $code == 1) echo "class=error";  ?>>
+    UserName:<input name="uname" type="text" value="<?php if (isset($uname)) echo $uname; ?>"
+        <?php if (isset($code) && $code == 1) echo "class=error"; ?>>
+    Password:<input name="pwd" type="password" value="<?php if (isset($p)) echo $p; ?>"
+        <?php if (isset($code) && $code == 1) echo "class=error"; ?>>
+    Email:<input name="email" type="text" id="email" value="<?php if (isset($email)) echo $email; ?>"
+        <?php if (isset($code) && $code == 3) echo "class=error"; ?>>
+    MobileNumber:<input name="mobile" type="text" id="number" value="<?php if (isset($mno)) echo $mno; ?>"
+        <?php if (isset($code) && $code == 2) echo "class=error"; ?>>
     <input type="submit" name="Submit" value="Submit"/>
     <a href="login.php">Click here to login</a>
 </form>
