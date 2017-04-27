@@ -1,0 +1,34 @@
+<html>
+<body>
+<script language="javascript">
+    function numToString(x) {
+        if (isNaN(x)) {
+            alert(" Not a number");
+            exit();
+        }
+        if (x < 0 || x > 999) {
+            alert("Out of range");
+            exit();
+        }
+        var units = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+        var randomer = ['', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
+        var tens = ['', 'Ten', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
+        var num = parseInt(x), str = "", tenser = "";
+        for (var i = 0; num >= 1; i++) {
+            var r = parseInt(num % 10);
+            tenser = r + tenser;
+            if (tenser <= 19 && tenser > 10) str = randomer[tenser - 10];
+            else if (i == 0) str = units[r]; //If units iace then call units array.
+            else if (i == 1) str = tens[r] + " " + str; //If tens iace then call tens array.
+            else if (i == 2) str = units[r] + " Hundred " + str; //If hundreds iace then call units array.
+            num = parseInt(num / 10);
+        }
+        alert(str);
+    }
+</script>
+
+<input type="text" id="txtinput"/>
+<input type="button" onclick="numToString(txtinput.value)"/>
+
+</body>
+</html>

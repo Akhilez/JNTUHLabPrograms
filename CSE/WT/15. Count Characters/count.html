@@ -1,0 +1,18 @@
+<html>
+	<body>
+		Count:
+		<textarea id="data"></textarea>
+		<input type="button" onclick="count(data.value)" />
+		
+		<script language="javascript">
+			function count(d){
+				var lines,words,characters;
+				characters=d.length;
+				words=d.split(/\b\S+\b/g).length-1;
+				lines=d.split(/\n/g).length;
+				alert("no.of characters:"+characters+", "+"no.of words:"+words+", "+"no.of lines"+lines);
+			}
+		</script>
+		
+	</body>
+</html>
