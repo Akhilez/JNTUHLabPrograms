@@ -1,0 +1,4 @@
+read fname
+echo "enter the starting line number"
+read s
+echo "enter the ending line number"
